@@ -27,7 +27,7 @@ h2 {
 
 /* link styling */
 a {
-	color: #99cc99;
+	color: #E35B2E;
 }
 
 /* size and style the page content box */
@@ -93,7 +93,7 @@ a {
 	width: 2rem;
 	text-indent: 2rem;
 	overflow: hidden;
-	background: #99cc99;
+	background: #E35B2E;
 	border-radius: 50%;
 	border: 0.125rem solid #ffffff;
 }
