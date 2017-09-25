@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* include padding and the border in the box dimensions */
+* {
+	box-sizing: border-box;
+}
+
+/* set font-family and colors for the body */
+/* note that we do not set font-size, which is inherited from the user's browser settings */
+body {
+	font-family: Verdana;
+	line-height: 1.5em;
+	color: #555555;
+	background: #314558;
+}
+
+/* header styles */
+h1 {
+	font-size: 2rem;
+	color: #314558;
+}
+h2 {
+	font-size: 1.5rem;
+	color: #314558;
+}
+
+/* link styling */
+a {
+	color: #99cc99;
+}
+
+/* size and style the page content box */
+.wrapper {
+	max-width: 50rem;
+	width: 100%;
+	margin: 2rem auto;
+	padding: 5rem;
+	background: #ffffff;
+	border: 0.5rem solid #2a3a49;
+}
+
+/* this element starts out with no dimensions and fully transparant */
+.modal_box {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 50%;
+	right: 50%;
+	bottom: 50%;
+	left: 50%;
+	overflow: hidden;
+	background: transparent;
+}
+
+/* once modal box becomes the target element, we make it visible with a transition */
+/* this will spread over the full page and dim the underlying content */
+.modal_box:target {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.80);
+	transition: background 0.35s;
+}
+
+/* style the actual pop-up */
+.modal_box:target .content {
+	border-radius: 0.5rem;
+	box-shadow: rgba(255,255,255,0.25) 0 0 0 0.5rem;
+	width: 30rem;
+	padding: 2rem;
+	position: absolute;
+	top: 20%;
+	left: calc(50% - 15rem);
+	background: #ffffff;
+}
+
+/* position the close button outside the pop-up to make it look on the corner */
+.modal_box:target .close {
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+}
+
+/* style the link so it looks like a circle */
+.modal_box:target .close a {
+	display: block;
+	height: 2rem;
+	width: 2rem;
+	text-indent: 2rem;
+	overflow: hidden;
+	background: #99cc99;
+	border-radius: 50%;
+	border: 0.125rem solid #ffffff;
+}
+
+/* fill the close button with an X to make it look realistic */
+.modal_box:target .close:after {
+	content: 'X';
+	font-weight: 800;
+	color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	line-height: 2rem;
+	width: 2rem;
+	text-align: center;
+	pointer-events: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Animate a Modal Panel">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Modal Pop-Up Demo</title>
+	<link type="text/css" rel="stylesheet" href="css/ModalPopUp.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<h1>Modal Pop-Up Demo</h1>
+
+		<!-- Just some random text to suggest page-flow -->
+		<p>With modern day CSS there is no need for JavaScript to achieve fancy looking animations and effects. When you click the link below, a modal pop-up will appear, which means all other interactions are temporally blocked until the pop-up is closed.</p>
+
+		<!-- The link that will open the modal pop-up -->
+		<a href="#infopanel" class="open_modal">Learn more about this little demonstration.</a>
+		
+		<!-- The modal_box is the grey overlay that appears to fade the normal page -->
+		<div id="infopanel" class="modal_box">
+			<!-- The content is the actual modal pop-up -->
+			<div class="content">
+				<h2>ABOUT THE MODAL BOX</h2>
+				<p>This pop-up window is controlled by css only. No scripting necessary!</p>
+				<p>When you're done click the X button to close.</p>
+				<!-- This div will be the close button in the upper right of the pop-up -->
+				<div class="close">
+					<!-- The link will move us back to the top of the page -->
+					<a href="#">Close</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Just some more random text to further suggest page flow -->
+		<p>Arte-Essentia is an experienced UX Designer with coding skills as an added bonus. From information architecture to final front-end development, he can be of good use for all your projects</p>
+
+	</div>
+  
+</body>
+</html>
