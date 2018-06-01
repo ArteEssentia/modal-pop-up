@@ -22,4 +22,4 @@ Further styling mainly is the close button, which we need to position, make a ci
 
 The CSS file is heavily commented to explain the different rules.
 
-## [Take a look at the live working version of this demo](https://arteessentia.github.io/modal-pop-up/)
+## [Take a look at the live working version of this demo](https://VincentKlijn.github.io/modal-pop-up/)
